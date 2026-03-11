@@ -15,6 +15,7 @@ import NESDeltaCore
 import N64DeltaCore
 import MelonDSDeltaCore
 import GPGXDeltaCore
+import SwanDeltaCore
 
 enum System: CaseIterable
 {
@@ -25,6 +26,7 @@ enum System: CaseIterable
     case gbc
     case gba
     case ds
+    case ws
     
     static var registeredSystems: [System] {
         let systems = System.allCases.filter { Delta.registeredCores.keys.contains($0.gameType) }
@@ -32,7 +34,7 @@ enum System: CaseIterable
     }
     
     static var allCores: [DeltaCoreProtocol] {
-        return [NES.core, SNES.core, N64.core, GBC.core, GBA.core, MelonDS.core, GPGX.core]
+        return [NES.core, SNES.core, N64.core, GBC.core, GBA.core, MelonDS.core, GPGX.core, WonderSwan.core]
     }
 }
 
@@ -48,6 +50,7 @@ extension System
         case .gba: return NSLocalizedString("Game Boy Advance", comment: "")
         case .ds: return NSLocalizedString("Nintendo DS", comment: "")
         case .genesis: return NSLocalizedString("Sega Genesis", comment: "")
+        case .ws: return NSLocalizedString("WonderSwan", comment: "")
         }
     }
     
@@ -61,6 +64,7 @@ extension System
         case .gba: return NSLocalizedString("GBA", comment: "")
         case .ds: return NSLocalizedString("DS", comment: "")
         case .genesis: return NSLocalizedString("Genesis (Beta)", comment: "")
+        case .ws: return NSLocalizedString("WS", comment: "")
         }
     }
     
@@ -74,6 +78,7 @@ extension System
         case .gba: return NSLocalizedString("Game Boy Advance", comment: "")
         case .ds: return NSLocalizedString("Nintendo DS", comment: "")
         case .genesis: return NSLocalizedString("Sega Genesis", comment: "")
+        case .ws: return NSLocalizedString("WonderSwan", comment: "")
         }
     }
     
@@ -87,6 +92,7 @@ extension System
         case .gbc: return 1998
         case .gba: return 2001
         case .ds: return 2004
+        case .ws: return 1999
         }
     }
 }
@@ -103,6 +109,7 @@ extension System
         case .gba: return GBA.core
         case .ds: return Settings.preferredCore(for: .ds) ?? MelonDS.core
         case .genesis: return GPGX.core
+        case .ws: return WonderSwan.core
         }
     }
     
@@ -116,6 +123,7 @@ extension System
         case .gba: return .gba
         case .ds: return .ds
         case .genesis: return .genesis
+        case .ws: return .ws
         }
     }
     
@@ -130,6 +138,7 @@ extension System
         case GameType.gba: self = .gba
         case GameType.ds: self = .ds
         case GameType.genesis: self = .genesis
+        case GameType.ws: self = .ws
         default: return nil
         }
     }
@@ -148,6 +157,7 @@ extension DeltaCore.GameType
         case "gba": self = .gba
         case "ds", "nds": self = .ds
         case "gen", "bin", "md", "smd": self = .genesis
+        case "ws", "wsc": self = .ws
         default: return nil
         }
     }

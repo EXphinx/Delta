@@ -27,6 +27,9 @@ xcuserdata
 *.xcuserstate
 *.xcscmblueprint
 
+## Local signing config (private, not committed)
+Local.xcconfig
+
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
