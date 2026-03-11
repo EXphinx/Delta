@@ -8,9 +8,6 @@
       location = "group:Cores/DeltaCore/DeltaCore.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Cores/NESDeltaCore/NESDeltaCore.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Cores/SNESDeltaCore/SNESDeltaCore.xcodeproj">
    </FileRef>
    <FileRef
@@ -20,13 +17,7 @@
       location = "group:Cores/GBADeltaCore/GBADeltaCore.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Cores/N64DeltaCore/N64DeltaCore.xcodeproj">
-   </FileRef>
-   <FileRef
       location = "group:Cores/MelonDSDeltaCore/MelonDSDeltaCore.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:Cores/GPGXDeltaCore/GPGXDeltaCore.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Cores/SwanDeltaCore/SwanDeltaCore.xcodeproj">
