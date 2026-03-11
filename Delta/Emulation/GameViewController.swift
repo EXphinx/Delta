@@ -14,6 +14,7 @@ import GBADeltaCore
 import N64DeltaCore
 import MelonDSDeltaCore
 import GPGXDeltaCore
+import SwanDeltaCore
 
 import Roxas
 import AltKit
@@ -197,10 +198,15 @@ class GameViewController: DeltaCore.GameViewController
     private var isPreparingAchievements = false
     
     override var shouldAutorotate: Bool {
+        // WonderSwan is a portrait-only console
+        if self.game?.type == .ws { return false }
         return !self.isGyroActive
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        // WonderSwan is a portrait-only console
+        if self.game?.type == .ws { return .portrait }
+        
         guard self.isGyroActive else { return super.supportedInterfaceOrientations }
         
         // Lock orientation to whatever current device orientation is.
