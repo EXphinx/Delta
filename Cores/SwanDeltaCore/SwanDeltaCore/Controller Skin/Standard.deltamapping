@@ -1,0 +1,17 @@
+{
+    "WonderSwan" : {
+        "gamepad" : {
+            "x1" : "up",
+            "x2" : "right",
+            "x3" : "down",
+            "x4" : "left",
+            "y1" : "leftThumbstickUp",
+            "y2" : "leftThumbstickRight",
+            "y3" : "leftThumbstickDown",
+            "y4" : "leftThumbstickLeft",
+            "a" : "a",
+            "b" : "b",
+            "start" : "menu"
+        }
+    }
+}

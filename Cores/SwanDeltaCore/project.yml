@@ -1,0 +1,46 @@
+name: SwanDeltaCore
+options:
+  bundleIdPrefix: com.delta
+  deploymentTarget:
+    iOS: "14.0"
+  xcodeVersion: "15.0"
+  defaultConfig: Release
+
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: "14.0"
+    SWIFT_VERSION: "5.9"
+    DEFINES_MODULE: YES
+    CLANG_ENABLE_MODULES: YES
+    CLANG_ENABLE_OBJC_ARC: YES
+    GCC_C_LANGUAGE_STANDARD: c11
+    CLANG_CXX_LANGUAGE_STANDARD: "c++14"
+
+targets:
+  SwanDeltaCore:
+    type: framework
+    platform: iOS
+    sources:
+      - path: SwanDeltaCore
+        excludes:
+          - "Engine/mednafen/wswan/wstech24.txt"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.delta.SwanDeltaCore
+        INFOPLIST_FILE: SwanDeltaCore/Info.plist
+        PRODUCT_NAME: SwanDeltaCore
+        HEADER_SEARCH_PATHS:
+          - "$(SRCROOT)/SwanDeltaCore/Engine/mednafen"
+          - "$(SRCROOT)/SwanDeltaCore/Engine"
+        SWIFT_OBJC_BRIDGING_HEADER: ""
+        DEFINES_MODULE: YES
+        MODULEMAP_FILE: ""
+        # Allow C files to be compiled as C (not C++)
+        GCC_INPUT_FILETYPE: automatic
+        OTHER_CFLAGS:
+          - "-Wno-unused-function"
+          - "-Wno-sign-compare"
+          - "-Wno-parentheses"
+    dependencies:
+      - framework: ../DeltaCore/DeltaCore.xcodeproj
+        embed: false

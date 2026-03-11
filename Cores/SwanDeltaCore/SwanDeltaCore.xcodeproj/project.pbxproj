@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02FA6B76DEDE200C8F116075 /* SwanEmulatorBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = A950DBC7EA401EFCBE28EA37 /* SwanEmulatorBridge.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15D7441478C0CC2F14A77ED6 /* wswan-memory.h in Headers */ = {isa = PBXBuildFile; fileRef = 900AE27B36AB07C7744C336E /* wswan-memory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F0F67471471DF2ED57BD646 /* eeprom.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AEF210269CF02F000CB9AC0 /* eeprom.c */; };
+		1F3B336502095A09C63FED3B /* wswan-memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 64B00F08D4DA8B34CFE88B4B /* wswan-memory.c */; };
+		22AEAC296E7646006F85789D /* v30mz.c in Sources */ = {isa = PBXBuildFile; fileRef = EC56BCEA200ACAA58A77DF7A /* v30mz.c */; };
+		230CCDB83CA4F4904EE31404 /* boolean.h in Headers */ = {isa = PBXBuildFile; fileRef = 84DDEB68D27105A3944D13DC /* boolean.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		261497C05B6E85E058C5E042 /* rtc.c in Sources */ = {isa = PBXBuildFile; fileRef = 62C7165F6A5300BFAB914242 /* rtc.c */; };
+		26828D8A96822F61C514FD53 /* v30mz.h in Headers */ = {isa = PBXBuildFile; fileRef = 71175D9E7138EEED28D20D4B /* v30mz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30EC9FE8B9713EB7469B9070 /* start.inc in Resources */ = {isa = PBXBuildFile; fileRef = 99C996BEDF8240FA254A310C /* start.inc */; };
+		34096FCC020CF6B0F69A3616 /* state.h in Headers */ = {isa = PBXBuildFile; fileRef = CA56682ACCB6D7B7C4A664C0 /* state.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		362835F19D64039499D37AB6 /* swan_core.c in Sources */ = {isa = PBXBuildFile; fileRef = 3ACAA89565B3813DA4B399D3 /* swan_core.c */; };
+		3D9F5FEA9375318456EC52D0 /* state_inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 09DCD525EE82F9830B675D94 /* state_inline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		541016F872DBBBF89DF6CC13 /* SwanGameInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FBCD3BE2F01A86E7C2835C /* SwanGameInput.swift */; };
+		665B4357DA9AEEEF9D7B8074 /* Standard.deltamapping in Resources */ = {isa = PBXBuildFile; fileRef = 7371DA283C584BE5981C8414 /* Standard.deltamapping */; };
+		67A322FDC26F55E3EE78F2B7 /* wswan.h in Headers */ = {isa = PBXBuildFile; fileRef = B7163F4ABBE6A1B0357FD923 /* wswan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69B3F56A4140AE2EA73D4DE7 /* gfx.h in Headers */ = {isa = PBXBuildFile; fileRef = B6BAFE4DE18D1208087FC175 /* gfx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F223DE1A936AA091E62C3AE /* Blip_Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B514405A9DA3F1C8CB826C3 /* Blip_Buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		737AAFA40355D2B5543E9353 /* interrupt.h in Headers */ = {isa = PBXBuildFile; fileRef = 32469594606051780581778F /* interrupt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D7F4F3524B0E8532108052 /* DeltaCore.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = 1472977709CEF06303267775 /* DeltaCore.xcodeproj */; };
+		88AF9714E9A556BD9F90D728 /* mempatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = B63F3A1822905483E6303B79 /* mempatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C0DD319DEE0D5A0047AF444 /* Blip_Buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BC71207F0AFEE33168AA930 /* Blip_Buffer.c */; };
+		90E09D55139B7B5799E627B4 /* settings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4624702411B93576126CE366 /* settings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		934E712A163D47E723F2CFEC /* strl.h in Headers */ = {isa = PBXBuildFile; fileRef = F01ACA48500FC32974E89FF8 /* strl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1CC77C1701AD1029AE9244F /* WonderSwan.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6539FB7F7DB9CB5E31EFD1A /* WonderSwan.swift */; };
+		AA084B0D6640716977B589B4 /* tcache.c in Sources */ = {isa = PBXBuildFile; fileRef = 475462294F292F52AF01FB46 /* tcache.c */; };
+		B0930FA4B1B8D64CFBE0E5CC /* git.h in Headers */ = {isa = PBXBuildFile; fileRef = DD587315A624D9C1B9D0664C /* git.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B184F46D45CDF76B5820F4FE /* state.c in Sources */ = {isa = PBXBuildFile; fileRef = 782961F2E8FE08159493522F /* state.c */; };
+		BE4691FB33ECE9D435509981 /* swan_core.h in Headers */ = {isa = PBXBuildFile; fileRef = F0052A16D462B97FD92F836B /* swan_core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C56DA817B0C66BFA503F4755 /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = F35C9F6AA04FEB5F473C8B5B /* sound.c */; };
+		C6AC1296D78ECCBC2E706F00 /* video.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DABF9C9AE94EF7C15661C57 /* video.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C80E8CE91EC83B5DD6C5E79E /* interrupt.c in Sources */ = {isa = PBXBuildFile; fileRef = 73EFA9316A348B30C48926CC /* interrupt.c */; };
+		D82EFB3422054BC0BE41B083 /* rtc.h in Headers */ = {isa = PBXBuildFile; fileRef = C6DB57E7DEF5D25C98557973 /* rtc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9A8ABDC5F50CC28EC34C7E9 /* SwanEmulatorBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABB5580DBF12E4A3335CC21B /* SwanEmulatorBridge.mm */; };
+		DD2885FE280631DA38571C01 /* mednafen-types.h in Headers */ = {isa = PBXBuildFile; fileRef = 465800E2FD89E9A2120EA7E2 /* mednafen-types.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDD2A6E9F2B46DC0E1ADE4B6 /* mempatcher-driver.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE618E89C1A2D4B26DDFA46 /* mempatcher-driver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5C33A6BEB1077697474F870 /* sound.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CE9328BA1CDD621DCA988DD /* sound.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8F46556979C67091519A684 /* gfx.c in Sources */ = {isa = PBXBuildFile; fileRef = 71FDAF40B0594B6F791D99B4 /* gfx.c */; };
+		EE0AF52D2904E19ADC117E20 /* eeprom.h in Headers */ = {isa = PBXBuildFile; fileRef = 629B6A4300CCAA799CD86D1F /* eeprom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE6F3D8BD8E7EF6DDFDEBF04 /* retro_inline.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C0237EAD1F5A2CF6731E512 /* retro_inline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2EEF547924421CF75A61579 /* SwanDeltaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 95640D10E93E4DC8F284FB8E /* SwanDeltaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA3929CE6E35663F4EEB79D8 /* msvc.h in Headers */ = {isa = PBXBuildFile; fileRef = F940484484834B5A7EC5627A /* msvc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09DCD525EE82F9830B675D94 /* state_inline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state_inline.h; sourceTree = "<group>"; };
+		0BC71207F0AFEE33168AA930 /* Blip_Buffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Blip_Buffer.c; sourceTree = "<group>"; };
+		1472977709CEF06303267775 /* DeltaCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DeltaCore.xcodeproj; path = ../DeltaCore/DeltaCore.xcodeproj; sourceTree = "<group>"; };
+		1DABF9C9AE94EF7C15661C57 /* video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		2B514405A9DA3F1C8CB826C3 /* Blip_Buffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blip_Buffer.h; sourceTree = "<group>"; };
+		32469594606051780581778F /* interrupt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interrupt.h; sourceTree = "<group>"; };
+		3ACAA89565B3813DA4B399D3 /* swan_core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = swan_core.c; sourceTree = "<group>"; };
+		3AEF210269CF02F000CB9AC0 /* eeprom.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = eeprom.c; sourceTree = "<group>"; };
+		3CE9328BA1CDD621DCA988DD /* sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sound.h; sourceTree = "<group>"; };
+		4624702411B93576126CE366 /* settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		465800E2FD89E9A2120EA7E2 /* mednafen-types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mednafen-types.h"; sourceTree = "<group>"; };
+		475462294F292F52AF01FB46 /* tcache.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tcache.c; sourceTree = "<group>"; };
+		629B6A4300CCAA799CD86D1F /* eeprom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eeprom.h; sourceTree = "<group>"; };
+		62C7165F6A5300BFAB914242 /* rtc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = rtc.c; sourceTree = "<group>"; };
+		64B00F08D4DA8B34CFE88B4B /* wswan-memory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "wswan-memory.c"; sourceTree = "<group>"; };
+		6C0237EAD1F5A2CF6731E512 /* retro_inline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = retro_inline.h; sourceTree = "<group>"; };
+		71175D9E7138EEED28D20D4B /* v30mz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = v30mz.h; sourceTree = "<group>"; };
+		71FDAF40B0594B6F791D99B4 /* gfx.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gfx.c; sourceTree = "<group>"; };
+		7371DA283C584BE5981C8414 /* Standard.deltamapping */ = {isa = PBXFileReference; path = Standard.deltamapping; sourceTree = "<group>"; };
+		73EFA9316A348B30C48926CC /* interrupt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = interrupt.c; sourceTree = "<group>"; };
+		782961F2E8FE08159493522F /* state.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = state.c; sourceTree = "<group>"; };
+		83B9DA88503A6A5B1477B6A8 /* SwanDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwanDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DDEB68D27105A3944D13DC /* boolean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = boolean.h; sourceTree = "<group>"; };
+		900AE27B36AB07C7744C336E /* wswan-memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wswan-memory.h"; sourceTree = "<group>"; };
+		95640D10E93E4DC8F284FB8E /* SwanDeltaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwanDeltaCore.h; sourceTree = "<group>"; };
+		99C996BEDF8240FA254A310C /* start.inc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.pascal; path = start.inc; sourceTree = "<group>"; };
+		A3FBCD3BE2F01A86E7C2835C /* SwanGameInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwanGameInput.swift; sourceTree = "<group>"; };
+		A950DBC7EA401EFCBE28EA37 /* SwanEmulatorBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwanEmulatorBridge.h; sourceTree = "<group>"; };
+		ABB5580DBF12E4A3335CC21B /* SwanEmulatorBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SwanEmulatorBridge.mm; sourceTree = "<group>"; };
+		B63F3A1822905483E6303B79 /* mempatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mempatcher.h; sourceTree = "<group>"; };
+		B6BAFE4DE18D1208087FC175 /* gfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gfx.h; sourceTree = "<group>"; };
+		B7163F4ABBE6A1B0357FD923 /* wswan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = wswan.h; sourceTree = "<group>"; };
+		B8C4416906AF1F77BBEDC7DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BAE618E89C1A2D4B26DDFA46 /* mempatcher-driver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mempatcher-driver.h"; sourceTree = "<group>"; };
+		C6539FB7F7DB9CB5E31EFD1A /* WonderSwan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WonderSwan.swift; sourceTree = "<group>"; };
+		C6DB57E7DEF5D25C98557973 /* rtc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rtc.h; sourceTree = "<group>"; };
+		CA56682ACCB6D7B7C4A664C0 /* state.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		DD587315A624D9C1B9D0664C /* git.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = git.h; sourceTree = "<group>"; };
+		EC56BCEA200ACAA58A77DF7A /* v30mz.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = v30mz.c; sourceTree = "<group>"; };
+		F0052A16D462B97FD92F836B /* swan_core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swan_core.h; sourceTree = "<group>"; };
+		F01ACA48500FC32974E89FF8 /* strl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strl.h; sourceTree = "<group>"; };
+		F35C9F6AA04FEB5F473C8B5B /* sound.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sound.c; sourceTree = "<group>"; };
+		F940484484834B5A7EC5627A /* msvc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = msvc.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E92FB0DC00F22193D726BD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D7F4F3524B0E8532108052 /* DeltaCore.xcodeproj in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		197A5BDCE3BC234097716D61 /* compat */ = {
+			isa = PBXGroup;
+			children = (
+				F940484484834B5A7EC5627A /* msvc.h */,
+				F01ACA48500FC32974E89FF8 /* strl.h */,
+			);
+			path = compat;
+			sourceTree = "<group>";
+		};
+		228527C16769EC5CFA5F98A6 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				3ACAA89565B3813DA4B399D3 /* swan_core.c */,
+				F0052A16D462B97FD92F836B /* swan_core.h */,
+				6F413F9A12C6A80B00E61F40 /* mednafen */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		5B215EC03CD9862921C352FE /* SwanDeltaCore */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4416906AF1F77BBEDC7DD /* Info.plist */,
+				95640D10E93E4DC8F284FB8E /* SwanDeltaCore.h */,
+				C6539FB7F7DB9CB5E31EFD1A /* WonderSwan.swift */,
+				D953994A1DBB294E8D665DBA /* Bridge */,
+				E9AB9FEA8CC3A25839DDA8EA /* Controller Skin */,
+				228527C16769EC5CFA5F98A6 /* Engine */,
+				739EF1B885F960A16F4EB00C /* Types */,
+			);
+			path = SwanDeltaCore;
+			sourceTree = "<group>";
+		};
+		624ECD3291989DF7B7F248A6 /* blip */ = {
+			isa = PBXGroup;
+			children = (
+				2B514405A9DA3F1C8CB826C3 /* Blip_Buffer.h */,
+			);
+			path = blip;
+			sourceTree = "<group>";
+		};
+		643C25A2A6A691377B5880CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83B9DA88503A6A5B1477B6A8 /* SwanDeltaCore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F413F9A12C6A80B00E61F40 /* mednafen */ = {
+			isa = PBXGroup;
+			children = (
+				84DDEB68D27105A3944D13DC /* boolean.h */,
+				DD587315A624D9C1B9D0664C /* git.h */,
+				465800E2FD89E9A2120EA7E2 /* mednafen-types.h */,
+				BAE618E89C1A2D4B26DDFA46 /* mempatcher-driver.h */,
+				B63F3A1822905483E6303B79 /* mempatcher.h */,
+				6C0237EAD1F5A2CF6731E512 /* retro_inline.h */,
+				4624702411B93576126CE366 /* settings.h */,
+				09DCD525EE82F9830B675D94 /* state_inline.h */,
+				782961F2E8FE08159493522F /* state.c */,
+				CA56682ACCB6D7B7C4A664C0 /* state.h */,
+				1DABF9C9AE94EF7C15661C57 /* video.h */,
+				197A5BDCE3BC234097716D61 /* compat */,
+				9DEFE9DC570E7F983B2F91FC /* include */,
+				80B98CE79216E4037B5418F8 /* sound */,
+				BA909DDF06066A35121E13D0 /* wswan */,
+			);
+			path = mednafen;
+			sourceTree = "<group>";
+		};
+		739EF1B885F960A16F4EB00C /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				A3FBCD3BE2F01A86E7C2835C /* SwanGameInput.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		80B98CE79216E4037B5418F8 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				0BC71207F0AFEE33168AA930 /* Blip_Buffer.c */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		9D691D0EC85893A41F8D96C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1472977709CEF06303267775 /* DeltaCore.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DEFE9DC570E7F983B2F91FC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				624ECD3291989DF7B7F248A6 /* blip */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BA909DDF06066A35121E13D0 /* wswan */ = {
+			isa = PBXGroup;
+			children = (
+				3AEF210269CF02F000CB9AC0 /* eeprom.c */,
+				629B6A4300CCAA799CD86D1F /* eeprom.h */,
+				71FDAF40B0594B6F791D99B4 /* gfx.c */,
+				B6BAFE4DE18D1208087FC175 /* gfx.h */,
+				73EFA9316A348B30C48926CC /* interrupt.c */,
+				32469594606051780581778F /* interrupt.h */,
+				62C7165F6A5300BFAB914242 /* rtc.c */,
+				C6DB57E7DEF5D25C98557973 /* rtc.h */,
+				F35C9F6AA04FEB5F473C8B5B /* sound.c */,
+				3CE9328BA1CDD621DCA988DD /* sound.h */,
+				99C996BEDF8240FA254A310C /* start.inc */,
+				475462294F292F52AF01FB46 /* tcache.c */,
+				EC56BCEA200ACAA58A77DF7A /* v30mz.c */,
+				71175D9E7138EEED28D20D4B /* v30mz.h */,
+				64B00F08D4DA8B34CFE88B4B /* wswan-memory.c */,
+				900AE27B36AB07C7744C336E /* wswan-memory.h */,
+				B7163F4ABBE6A1B0357FD923 /* wswan.h */,
+			);
+			path = wswan;
+			sourceTree = "<group>";
+		};
+		C9C5CEAC4F3E6505B89DFD65 = {
+			isa = PBXGroup;
+			children = (
+				5B215EC03CD9862921C352FE /* SwanDeltaCore */,
+				9D691D0EC85893A41F8D96C1 /* Frameworks */,
+				643C25A2A6A691377B5880CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D953994A1DBB294E8D665DBA /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				A950DBC7EA401EFCBE28EA37 /* SwanEmulatorBridge.h */,
+				ABB5580DBF12E4A3335CC21B /* SwanEmulatorBridge.mm */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		E9AB9FEA8CC3A25839DDA8EA /* Controller Skin */ = {
+			isa = PBXGroup;
+			children = (
+				7371DA283C584BE5981C8414 /* Standard.deltamapping */,
+			);
+			path = "Controller Skin";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BE12985561E4428E99BDAC59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F223DE1A936AA091E62C3AE /* Blip_Buffer.h in Headers */,
+				F2EEF547924421CF75A61579 /* SwanDeltaCore.h in Headers */,
+				02FA6B76DEDE200C8F116075 /* SwanEmulatorBridge.h in Headers */,
+				230CCDB83CA4F4904EE31404 /* boolean.h in Headers */,
+				EE0AF52D2904E19ADC117E20 /* eeprom.h in Headers */,
+				69B3F56A4140AE2EA73D4DE7 /* gfx.h in Headers */,
+				B0930FA4B1B8D64CFBE0E5CC /* git.h in Headers */,
+				737AAFA40355D2B5543E9353 /* interrupt.h in Headers */,
+				DD2885FE280631DA38571C01 /* mednafen-types.h in Headers */,
+				DDD2A6E9F2B46DC0E1ADE4B6 /* mempatcher-driver.h in Headers */,
+				88AF9714E9A556BD9F90D728 /* mempatcher.h in Headers */,
+				FA3929CE6E35663F4EEB79D8 /* msvc.h in Headers */,
+				EE6F3D8BD8E7EF6DDFDEBF04 /* retro_inline.h in Headers */,
+				D82EFB3422054BC0BE41B083 /* rtc.h in Headers */,
+				90E09D55139B7B5799E627B4 /* settings.h in Headers */,
+				E5C33A6BEB1077697474F870 /* sound.h in Headers */,
+				34096FCC020CF6B0F69A3616 /* state.h in Headers */,
+				3D9F5FEA9375318456EC52D0 /* state_inline.h in Headers */,
+				934E712A163D47E723F2CFEC /* strl.h in Headers */,
+				BE4691FB33ECE9D435509981 /* swan_core.h in Headers */,
+				26828D8A96822F61C514FD53 /* v30mz.h in Headers */,
+				C6AC1296D78ECCBC2E706F00 /* video.h in Headers */,
+				15D7441478C0CC2F14A77ED6 /* wswan-memory.h in Headers */,
+				67A322FDC26F55E3EE78F2B7 /* wswan.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7EC1BDE039E1B019FBD41C10 /* SwanDeltaCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41537AFA7F9ED1A469820CF4 /* Build configuration list for PBXNativeTarget "SwanDeltaCore" */;
+			buildPhases = (
+				BE12985561E4428E99BDAC59 /* Headers */,
+				4F0E74CF39B9E8F9F2A1B7A0 /* Sources */,
+				0DC61B81859C9D6C8EF3D3E6 /* Resources */,
+				9E92FB0DC00F22193D726BD2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwanDeltaCore;
+			productName = SwanDeltaCore;
+			productReference = 83B9DA88503A6A5B1477B6A8 /* SwanDeltaCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		304611AB28AAA904CC365FAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 020667A0392AE7F97FD3F28A /* Build configuration list for PBXProject "SwanDeltaCore" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C9C5CEAC4F3E6505B89DFD65;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EC1BDE039E1B019FBD41C10 /* SwanDeltaCore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DC61B81859C9D6C8EF3D3E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665B4357DA9AEEEF9D7B8074 /* Standard.deltamapping in Resources */,
+				30EC9FE8B9713EB7469B9070 /* start.inc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F0E74CF39B9E8F9F2A1B7A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C0DD319DEE0D5A0047AF444 /* Blip_Buffer.c in Sources */,
+				D9A8ABDC5F50CC28EC34C7E9 /* SwanEmulatorBridge.mm in Sources */,
+				541016F872DBBBF89DF6CC13 /* SwanGameInput.swift in Sources */,
+				A1CC77C1701AD1029AE9244F /* WonderSwan.swift in Sources */,
+				1F0F67471471DF2ED57BD646 /* eeprom.c in Sources */,
+				E8F46556979C67091519A684 /* gfx.c in Sources */,
+				C80E8CE91EC83B5DD6C5E79E /* interrupt.c in Sources */,
+				261497C05B6E85E058C5E042 /* rtc.c in Sources */,
+				C56DA817B0C66BFA503F4755 /* sound.c in Sources */,
+				B184F46D45CDF76B5820F4FE /* state.c in Sources */,
+				362835F19D64039499D37AB6 /* swan_core.c in Sources */,
+				AA084B0D6640716977B589B4 /* tcache.c in Sources */,
+				22AEAC296E7646006F85789D /* v30mz.c in Sources */,
+				1F3B336502095A09C63FED3B /* wswan-memory.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0105D2B3B729692314317006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		0AB8F4F497AE05B95E71268A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../DeltaCore\"",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/SwanDeltaCore/Engine/mednafen",
+					"$(SRCROOT)/SwanDeltaCore/Engine",
+				);
+				INFOPLIST_FILE = SwanDeltaCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MODULEMAP_FILE = "";
+				OTHER_CFLAGS = (
+					"-Wno-unused-function",
+					"-Wno-sign-compare",
+					"-Wno-parentheses",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.SwanDeltaCore;
+				PRODUCT_NAME = SwanDeltaCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		106F236F5BAC0714F37FC173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"../DeltaCore\"",
+				);
+				GCC_INPUT_FILETYPE = automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/SwanDeltaCore/Engine/mednafen",
+					"$(SRCROOT)/SwanDeltaCore/Engine",
+				);
+				INFOPLIST_FILE = SwanDeltaCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MODULEMAP_FILE = "";
+				OTHER_CFLAGS = (
+					"-Wno-unused-function",
+					"-Wno-sign-compare",
+					"-Wno-parentheses",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.delta.SwanDeltaCore;
+				PRODUCT_NAME = SwanDeltaCore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		368E05AF35C8DC33631784F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020667A0392AE7F97FD3F28A /* Build configuration list for PBXProject "SwanDeltaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0105D2B3B729692314317006 /* Debug */,
+				368E05AF35C8DC33631784F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41537AFA7F9ED1A469820CF4 /* Build configuration list for PBXNativeTarget "SwanDeltaCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				106F236F5BAC0714F37FC173 /* Debug */,
+				0AB8F4F497AE05B95E71268A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 304611AB28AAA904CC365FAD /* Project object */;
+}
