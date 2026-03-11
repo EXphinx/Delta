@@ -32,6 +32,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		067BF9B42F6125FD0055045B /* SwanDeltaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 067BF9B32F6125FD0055045B /* SwanDeltaCore.framework */; };
+		067BF9B52F6125FD0055045B /* SwanDeltaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 067BF9B32F6125FD0055045B /* SwanDeltaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1FA4ABA79AB72914FE414A61 /* libPods-Delta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC866E433B3BA9AE18ABA1EC /* libPods-Delta.a */; };
 		823D998F2E566EE40025F4CD /* GBCColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823D998E2E566EE40025F4CD /* GBCColorPalette.swift */; };
 		8279ED042E53BA4F008995FA /* GBACoreSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8279ED032E53BA4F008995FA /* GBACoreSettingsView.swift */; };
@@ -531,6 +533,7 @@
 				D5C7DD022E26CF2E0048FF5C /* DeltaCore.framework in Embed Frameworks */,
 				D5C7DD152E26CF6F0048FF5C /* N64DeltaCore_Video.framework in Embed Frameworks */,
 				D5C7DD0E2E26CF630048FF5C /* GBCDeltaCore.framework in Embed Frameworks */,
+				067BF9B52F6125FD0055045B /* SwanDeltaCore.framework in Embed Frameworks */,
 				D5DF874A2E25AA74005CCF92 /* GPGXDeltaCore.framework in Embed Frameworks */,
 				D5C7DD172E26CF6F0048FF5C /* N64DeltaCore.framework in Embed Frameworks */,
 				D5C7DD1A2E26CF810048FF5C /* MelonDSDeltaCore.framework in Embed Frameworks */,
@@ -555,6 +558,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		067BF9B32F6125FD0055045B /* SwanDeltaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwanDeltaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22506DA00971C4300AF90A35 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3E5A45AB20C8A87754453B /* libPods-DeltaPreviews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeltaPreviews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		823D998E2E566EE40025F4CD /* GBCColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBCColorPalette.swift; sourceTree = "<group>"; };
@@ -889,6 +893,7 @@
 				D5E76AAD2BE199890078C0C5 /* ShowTouches in Frameworks */,
 				D5C7DD192E26CF810048FF5C /* MelonDSDeltaCore.framework in Frameworks */,
 				D5C45FEF2BE992A80009DBB0 /* AltKit in Frameworks */,
+				067BF9B42F6125FD0055045B /* SwanDeltaCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1227,6 +1232,7 @@
 		BF9F4FCD1AAD7B25004C9500 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				067BF9B32F6125FD0055045B /* SwanDeltaCore.framework */,
 				D5C7DD182E26CF810048FF5C /* MelonDSDeltaCore.framework */,
 				D5C7DD0F2E26CF6F0048FF5C /* N64DeltaCore_RSP.framework */,
 				D5C7DD102E26CF6F0048FF5C /* N64DeltaCore_Video.framework */,

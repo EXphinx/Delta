@@ -70,6 +70,7 @@ private extension SettingsViewController
         case gbc
         case gba
         case ds
+        case ws
     }
     
     enum AdvancedRow: Int, CaseIterable
@@ -741,7 +742,7 @@ extension SettingsViewController
                 let preferredCore = Settings.preferredCore(for: .ds)
                 cell.detailTextLabel?.text = preferredCore?.metadata?.name.value ?? preferredCore?.name ?? NSLocalizedString("Unknown", comment: "")
                 
-            case .nes, .genesis, .snes, .n64, .gbc, .gba: break
+            case .nes, .genesis, .snes, .n64, .gbc, .gba, .ws: break
             }
             
         case .patreon:
@@ -821,6 +822,7 @@ extension SettingsViewController
             case .ds:
                 self.performSegue(withIdentifier: Segue.dsSettings.rawValue, sender: cell)
                 return
+            case .ws: return
             }
             
             self.navigationController?.pushViewController(hostingController, animated: true)
