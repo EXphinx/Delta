@@ -1,0 +1,20 @@
+// =============================================
+// 本地签名配置模板
+// =============================================
+// 
+// 使用方法：
+// 1. 复制此文件为 LocalSigning.xcconfig（去掉 .template 后缀）
+// 2. 填入你自己的 Team ID 和 Bundle Identifier
+// 3. 在 Xcode 项目设置中，为每个 Target 的 Debug/Release Configuration 
+//    设置 Based on Configuration File 为 LocalSigning
+//
+// 或者更简单的方式：直接在 Xcode GUI 中修改 Team 和 Bundle ID，
+// 因为 dev/ 目录已经被 .gitignore 忽略了。
+//
+// =============================================
+
+// 你的 Apple 开发者 Team ID（在 Xcode Accounts 中可以看到）
+// DEVELOPMENT_TEAM = XXXXXXXXXX
+
+// 主 App 的 Bundle Identifier（改成你自己的）
+// PRODUCT_BUNDLE_IDENTIFIER = com.yourname.Delta
